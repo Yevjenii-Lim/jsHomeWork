@@ -81,12 +81,11 @@ var result = document.querySelector('#result');
     
 //     let d = 0;
 //     for(let i = 1; i < n; i++){
-        
 //         if(n % i == 0) {
 //             d += i
 //         }
 //     }
-//     if(n == d) {
+//     if(n === d) {
 //         return n;
 //     }
     
@@ -179,51 +178,114 @@ var result = document.querySelector('#result');
 
 
 
-function makeSeconds(h,m,s) {
+// function makeSeconds(h,m,s) {
 
-    let hm = h * 3600;
-    let mm = m * 60;
+//     let hm = h * 3600;
+//     let mm = m * 60;
     
-    // result.innerText = hm + mm + s
-    return hm + mm + s
-} 
+//     // result.innerText = hm + mm + s
+//     return hm + mm + s
+// } 
 
 
-function secondsChange(s) {
-        let h = 0;
-        let m = 0;
-        for(let i = 60; i <= s;) {
-            s -= 60;
-            m += 1
-        }
-        for(let i = 60; i <= m;) {
-            m -= 60;
-            h += 1;
-        }
+// function secondsChange(s) {
+//         let h = 0;
+//         let m = 0;
+//         for(let i = 60; i <= s;) {
+//             s -= 60;
+//             m += 1
+//         }
+//         for(let i = 60; i <= m;) {
+//             m -= 60;
+//             h += 1;
+//         }
     
-        result.innerText = `${h}:${m}:${s}`
-    }
+//         result.innerText = `${h}:${m}:${s}`
+//     }
 
 
-function updateResult(date1, date2) {
+// function updateResult(date1, date2) {
 
-    date1 = input.value.split(':').map(i => i = parseInt(i));
-    date2 = input2.value.split(':').map(i => i = parseInt(i));
-    console.log(date2.reduce((a,b) => a + b, 0))
-    console.log(date1.reduce((a,b) => a + b, 0))
-    if((date2.reduce((a,b) => a + b, 0)) > (date1.reduce((a,b) => a + b, 0))) {
-        result.innerText = "Wrong enter time"
-        return
-    }
-    let seconds1 = makeSeconds(date1[0], date1[1], date1[2]);
-    let seconds2 = makeSeconds(date2[0], date2[1], date2[2])
+//     date1 = input.value.split(':').map(i => i = parseInt(i));
+//     date2 = input2.value.split(':').map(i => i = parseInt(i));
+//     console.log(date2.reduce((a,b) => a + b, 0))
+//     console.log(date1.reduce((a,b) => a + b, 0))
+//     if((date2.reduce((a,b) => a + b, 0)) > (date1.reduce((a,b) => a + b, 0))) {
+//         result.innerText = "Wrong enter time"
+//         return
+//     }
+//     let seconds1 = makeSeconds(date1[0], date1[1], date1[2]);
+//     let seconds2 = makeSeconds(date2[0], date2[1], date2[2])
 
-    let dif = seconds1 - seconds2;
-    if(dif < 0) {
-        result.innerText = "Wrong enter time"
-    }
-    secondsChange(dif)
+//     let dif = seconds1 - seconds2;
+//     if(dif < 0) {
+//         result.innerText = "Wrong enter time"
+//     }
+//     secondsChange(dif)
 
-}
+// }
 
 // makeSeconds(1,30,30)
+
+
+// Написать функцию, которая принимает 2 числа и возвращает -1, 
+// если первое меньше, чем второе; 1 – если первое больше, 
+// чем второе; и 0 – если числа равны.
+
+// function updateResult() {
+//     const n = +input.value;
+//     const m = +input2.value;
+//     let x;
+//     n < m ? x = '-1' : x = '1';
+//     n == m ? x = '0' : null;
+
+//     let p = document.createElement('p');
+//     p.innerText = x;
+//     result.append(p);
+// }
+
+// Написать функцию, которая вычисляет факториал переданного ей числа.
+
+// function updateResult(n) {
+//     n = +input.value;
+//     let f = 1;
+//     for(let i = 1; i <= n; i++) {
+//         f *= i;
+//         console.log(f)
+//     }
+//     let p = document.createElement('p');
+//     p.innerText = f;
+//     result.append(p);
+// }
+
+
+// function updateResult() {
+//     const result = document.getElementById('result');
+//     const num1 = document.getElementById('input1');
+//     const num2 = document.getElementById('input2');
+//     const num3 = document.getElementById('input3');
+
+//     const n = num1.value;
+//     const m = num2.value;
+//     const t = num3.value;
+//     const z = n + m + t;
+//     let p = document.createElement('p');
+//     p.innerText = z;
+//     result.append(p);  
+// }
+
+
+
+// function updateResult(n, n1) {
+//     n = +input.value;
+//     n1 = +input2.value;
+
+//     if(n1 != 0) {
+//         result.innerText = n * n1
+//     }else {
+//         n *= n
+//         result.innerText = n
+//     }
+
+// }
+
