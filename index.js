@@ -289,3 +289,67 @@ var result = document.querySelector('#result');
 
 // }
 
+
+// let arr = [1,2,3,4,5,6,7,8,9]
+
+// function c(i) {
+//     console.log(i)
+// }
+
+// arr.map(i => i += 1)
+
+// arr.forEach(c)
+// let obj = {
+//     1: 'asd'
+// }
+
+// let obj1 = {
+//     1: 'asd'
+// }
+
+// obj1 = obj
+// console.log(obj === obj1)
+
+
+// 1. Создать объект, описывающий автомобиль (производитель, модель, год выпуска, средняя скорость), 
+// и следующие функции для работы с этим объектом:
+// Функция для вывода на экран информации об автомобиле;
+// Функция для подсчета необходимого времени для преодоления переданного расстояния со средней скоростью. 
+// Учтите, что через каждые 4 часа дороги водителю необходимо делать перерыв на 1 час.
+
+
+// let car = {
+//     country: 'USA',
+//     model: 'tesla',
+//     year: 2020,
+//     speed: 100
+// }
+
+
+// function showCar(c) {
+//     for(key in c) {
+//         let val = c[key];
+//         console.log(key + " : " + val)
+//     }
+// }
+// showCar(car)
+
+function countTime(way) {
+    let time = way / 60;
+    let restHours = 0;
+    
+    for(let i = 1; i < time; i++) {
+        if(i % 4 == 0) {
+            restHours++
+            console.log(time)
+        }
+        
+
+    }
+   time += restHours;
+    console.log("time for this trip = " + time + " hours")
+}
+
+
+countTime(500)
+console.log(16 % 4)
