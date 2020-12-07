@@ -334,22 +334,159 @@ var result = document.querySelector('#result');
 // }
 // showCar(car)
 
-function countTime(way) {
-    let time = way / 60;
-    let restHours = 0;
+// function countTime(way) {
+//     let time = way / 60;
+//     let restHours = 0;
     
-    for(let i = 1; i < time; i++) {
-        if(i % 4 == 0) {
-            restHours++
-            console.log(time)
-        }
+//     for(let i = 1; i < time; i++) {
+//         if(i % 4 == 0) {
+//             restHours++
+//             console.log(time)
+//         }
         
 
-    }
-   time += restHours;
-    console.log("time for this trip = " + time + " hours")
-}
+//     }
+//    time += restHours;
+//     console.log("time for this trip = " + time + " hours")
+// }
 
 
-countTime(500)
-console.log(16 % 4)
+// countTime(500)
+// console.log(16 % 4)
+
+
+// let arr = [1,2,3,4,5,6]
+
+// let sum = (a) => a.reduce((a,b) => a + b, 0)
+
+// console.log(sum(arr))
+
+
+
+// const a1 = [1, 5, 8, 55, 18, 19, 60]
+
+// let max = (a) => {
+//     let max = a[0];
+//     for(let i = 0; i < a.length; i++) {
+//         max < a[i] ? max = a[i] : max;
+//     }
+
+//     console.log(max)
+// }
+
+// max(a1)
+
+
+// let a = []
+
+
+// let add = (arr) => {
+//     const getString = (n) => {
+//         let str = ''
+//         for(let i = 0; i < n; i++) {
+//             str += n
+//         }
+//         return str
+//     } 
+//     for(let i = 1; i < 10; i++) {
+//         let result = getString(i)
+//         arr.push(result)
+//     }
+//     console.log(arr)
+// }
+
+
+// add(a)
+
+// const shopping = [
+//     {product: 'Milk', quantity: 1, price: 13.4},
+//     {product: 'Bread', quantity: 1, price: 20},
+//     {product: 'Sugar', quantity: 2, price: 34.9},
+//     {product: 'Cucumbers', quantity: 3, price: 15},
+//     {product: 'Tomatoes', quantity: 4, price: 25}
+// ]
+
+// // shopping.map(i => i.price = parseInt(i.price))
+// shopping.map(i => console.log(i.price))
+
+// console.log(shopping.reduce((a, b, index) => a + b.price, 0))
+
+
+// class PrintMaсhine {
+//     fontSize = 15;
+//     color = 'black';
+//     fontFamily = 'Arial';
+//     constructor(fontSize, color) {
+//         this.fontSize = fontSize
+//         this.color = color;
+//     }
+//     print(value) {
+//         const str = `<h1 style="font-size: ${this.fontSize}px; color: ${this.color}; font-family: ${this.fontFamily};"> ${value} </h1>`;
+//         // document.write(str)
+//         console.log(str)
+//     }
+
+// }
+
+// let printer = new PrintMaсhine(15, 'green')
+
+// printer.print('hello')
+
+
+// class Emploee {
+//     name = 'John';
+//     age = 30;
+//     constructor(name,age, pos) {
+//         this.name = name;
+//         this.age = age
+//         this.pos = pos
+//     }
+// }
+// let aEmp =[]
+// let names = ['john','peter','ann','helga', 'artue','ricardo','denis','bullshit','hello', 'world']
+// let position = ['worker', 'secreatar', 'seciruty']
+// let count = 0
+// for(let i = 0; i < 10; i++) {
+    
+//     aEmp[i] = new Emploee(names[i], i, position[count])
+//     count++
+//     if(count == position.length) {
+//         count = 0
+//     }
+// }
+
+// console.log(aEmp)
+
+// class EmpTable {
+//     constructor(arr) {
+//         this.table = arr;
+//     }
+
+//     getHtml() {
+//         let tab = document.createElement('table')
+//         result.append(tab)
+//         console.log(this.table[0])
+//         for(let i = 0; i < this.table.length ; i++) {
+//             let row = document.createElement('tr')
+//             tab.append(row)
+
+//                 let col = document.createElement('td')
+//                 col.innerText = this.table[i].name
+//                 row.append(col)
+//                 let col1 = document.createElement('td')
+//                 col1.innerText = this.table[i].age
+//                 row.append(col1)
+//                 let col2 = document.createElement('td')
+//                 col2.innerText = this.table[i].pos
+//                 row.append(col2)
+//         }
+//     }
+// }
+
+// let act = new EmpTable(aEmp)
+
+// act.getHtml()
+// console.log(act)
+
+
+
